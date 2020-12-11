@@ -1,7 +1,7 @@
 
   <mat-toolbar-row fxHide fxShow.gt-sm class="container" fxLayout="row"  fxLayout.xs="row" fxLayoutAlign="space-between center">
     <div class="main-menu" fxLayout="row" fxHide fxShow.gt-sm>
-        <a  mat-button class="mat-button" [matMenuTriggerFor]="animals">Home<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+        <!-- <a  mat-button class="mat-button" [matMenuTriggerFor]="animals">Home<mat-icon class="caret">arrow_drop_down</mat-icon></a>
         <mat-menu #animals="matMenu" [overlapTrigger]="false" class="app-dropdown">
           <a mat-menu-item [routerLink]="['/home/one']" routerLinkActive="router-link-active" >Home-1</a>
           <a mat-menu-item [routerLink]="['/home/two']" routerLinkActive="router-link-active">Home-2</a>
@@ -12,15 +12,9 @@
           <a mat-menu-item [routerLink]="['/home/food']" routerLinkActive="router-link-active">Food</a>
           <a mat-menu-item [routerLink]="['/home/furniture']" routerLinkActive="router-link-active">Furniture</a>
           <a mat-menu-item [routerLink]="['/home/home-decor']" routerLinkActive="router-link-active">Home Decor</a>
-      </mat-menu>
-        <a  [matMenuTriggerFor]="products" routerLinkActive="router-link-active"  mat-button class="mat-button">Products<mat-icon class="caret">arrow_drop_down</mat-icon></a>
-        <mat-menu #products="matMenu" [overlapTrigger]="false" class="app-dropdown">
-            <a mat-menu-item [routerLink]="['/home/products/all/left-sidebar']" routerLinkActive="router-link-active" >Products Left Sidebar</a>
-            <a mat-menu-item [routerLink]="['/home/products/all/right-sidebar']" routerLinkActive="router-link-active">Products Right Sidebar</a>
-            <a mat-menu-item [routerLink]="['/home/products/all/no-sidebar']" routerLinkActive="router-link-active">Products No Sidebar</a>
-          
-        </mat-menu>
-        <a  mat-button [matMenuTriggerFor]="shop" class="mat-button" (click)="openMegaMenu()">Shop<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+      </mat-menu> -->
+
+      <a  mat-button [matMenuTriggerFor]="shop" class="mat-button" (click)="openMegaMenu()">Shop<mat-icon class="caret">arrow_drop_down</mat-icon></a>
         <mat-menu #shop="matMenu" [overlapTrigger]="false" class="app-dropdown mega-menu">
             <div fxLayout="row wrap">
                 <div fxFlex="25" fxLayout="column" class="p-1">
@@ -60,12 +54,19 @@
             </div>
   
         </mat-menu>
-        <a  mat-button mat-button [matMenuTriggerFor]="blog" class="mat-button">Blog<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+
+        <!-- <a  [matMenuTriggerFor]="products" routerLinkActive="router-link-active"  mat-button class="mat-button">Products<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+        <mat-menu #products="matMenu" [overlapTrigger]="false" class="app-dropdown">
+            <a mat-menu-item [routerLink]="['/home/products/all/left-sidebar']" routerLinkActive="router-link-active" >Products Left Sidebar</a>
+            <a mat-menu-item [routerLink]="['/home/products/all/right-sidebar']" routerLinkActive="router-link-active">Products Right Sidebar</a>
+            <a mat-menu-item [routerLink]="['/home/products/all/no-sidebar']" routerLinkActive="router-link-active">Products No Sidebar</a>
+        </mat-menu> -->
+        
+        <!-- <a  mat-button mat-button [matMenuTriggerFor]="blog" class="mat-button">Blog<mat-icon class="caret">arrow_drop_down</mat-icon></a>
         <mat-menu #blog="matMenu" [overlapTrigger]="false" class="app-dropdown">
             <a mat-menu-item [routerLink]="['/blog/blog-list']">Blog List</a>
             <a mat-menu-item [routerLink]="['/blog/blog-column']">Blog Columns</a>
             <a mat-menu-item [routerLink]="['/blog/blog-details']">Blog Details</a>
-  
         </mat-menu>
         <a  mat-button [matMenuTriggerFor]="pages" class="mat-button">Pages<mat-icon class="caret">arrow_drop_down</mat-icon></a>
         <mat-menu #pages="matMenu" [overlapTrigger]="false" class="app-dropdown">
@@ -78,8 +79,8 @@
           <a mat-menu-item [routerLink]="['/pages/cart']">Cart</a>
           <a mat-menu-item [routerLink]="['/pages/my-account']">My Account</a>
           <a mat-menu-item [routerLink]="['/pages/error']">404</a>
-      </mat-menu>
-        <a [routerLink]="['/pages/contact']" routerLinkActive="router-link-active"   mat-button class="mat-button">Contact</a>
+      </mat-menu> -->
+        <!-- <a [routerLink]="['/pages/contact']" routerLinkActive="router-link-active"   mat-button class="mat-button">Contact</a> -->
       </div>
   </mat-toolbar-row>
 
